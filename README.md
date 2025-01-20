@@ -1,8 +1,8 @@
 # Auto-Read-Story-Forder-Biar-Rapih-V2
 
-![Random Image](https://source.unsplash.com/random/800x600)
+![Random Neko Image](https://nekos.life/api/v2/img/neko)
 
-_Last updated: `new Date().toLocaleString()`_
+_Last updated: <script>document.write(new Date().toLocaleString());</script>_
 
 ---
 
@@ -67,3 +67,28 @@ _Last updated: `new Date().toLocaleString()`_
 - [GitHub](https://github.com/username)
 - [Twitter](https://twitter.com/username)
 - [LinkedIn](https://linkedin.com/in/username)
+
+---
+
+## Gambar Neko Acak
+
+<details>
+  <summary>Lihat Gambar Neko</summary>
+  
+  ![Random Neko Image](https://nekos.life/api/v2/img/neko)
+
+</details>
+
+---
+
+## Video Anime
+
+<details>
+  <summary>Lihat Video Anime</summary>
+  
+  <video width="320" height="240" controls>
+    <source src="https://www.example.com/anime-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+</details>

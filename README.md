@@ -93,3 +93,22 @@ Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 ## Kontak
 
 Jika Anda memiliki pertanyaan atau masalah, silakan hubungi saya di [email@example.com](mailto:email@example.com).
+
+## Sosial Media
+
+[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6289688206739)
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com)
+
+---
+
+## Animasi GIF
+
+![Anime GIF](https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif)
+
+---
+
+## Lagu
+
+[![Play Music](https://img.shields.io/badge/Play%20Music-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)

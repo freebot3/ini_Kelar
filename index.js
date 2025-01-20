@@ -3,19 +3,19 @@
 const fs = require('fs');
 const cfonts = require('cfonts'); // Impor cfonts
 const readlineSync = require('readline-sync'); // Impor readline-sync untuk input pengguna
-const { handleStatusUpdate } = require('./Fitur/emoji'); // Impor handleStatusUpdate dari emoji.js
-const config = require('./config'); // Impor konfigurasi
-const { autoTyping, autoRecord, sendReadReceipt } = require('./Fitur/Auto_typing_record_sendReadReceipt'); // Impor fungsi dari Auto_typing_record_sendReadReceipt.js
-const { sendWelcomeGoodbyeMessage, handleGroupInfoChange, handleAdminStatusChange } = require('./Fitur/fitur'); // Impor fungsi dari fitur.js
+const { handleStatusUpdate, saveCounts, loadCounts } = require('./LIST_FITUR/emoji'); // Impor handleStatusUpdate, saveCounts, dan loadCounts dari emoji.js
+const config = require('./Pengaturan/config'); // Impor konfigurasi
+const { autoTyping, autoRecord, sendReadReceipt } = require('./LIST_FITUR/Auto_Mengetik_MerekamSuara');  // impor fungsi dari Auto_typing_record_sendReadReceipt.js
+const { sendWelcomeGoodbyeMessage, handleGroupInfoChange, handleAdminStatusChange } = require('./LIST_FITUR/fitur'); // Impor fungsi dari fitur.js
 const { execSync } = require('child_process'); // Impor child_process untuk menjalankan perintah npm
-const { saveCounts, loadCounts, sendNotification } = require('./Fitur/notifpesantersambung'); // Impor fungsi dari notifpesantersambung.js
 const axios = require('axios'); // Impor axios untuk mengirim pesan kesalahan
-const { antigambar } = require('./Fitur/antigambar'); // Impor fungsi antigambar
-const { antisticker } = require('./Fitur/antisticker'); // Impor fungsi antisticker 
-const { reaksipesanrandom } = require('./Fitur/reaksipesanrandom'); // Impor fungsi reaksipesanrandom
-const { resetAllWarningCounts, antilinkgc, antilinkchannel, handleParticipantUpdate } = require('./Fitur/antigroupchannel'); // Impor fungsi dari antigroupchannel.js
-const { antivideo } = require('./Fitur/Antivideo'); // Impor fungsi antivideo
-const { antispam } = require('./Fitur/antispam'); // Impor fungsi antispam
+const { antigambar } = require('./LIST_FITUR/antigambar'); // Impor fungsi antigambar
+const { antisticker } = require('./LIST_FITUR/antisticker'); // Impor fungsi antisticker 
+const { reaksipesanrandom } = require('./LIST_FITUR/reaksipesanrandom'); // Impor fungsi reaksipesanrandom
+const { resetAllWarningCounts, antilinkgc, antilinkchannel, handleParticipantUpdate } = require('./LIST_FITUR/antigroupchannel'); // Impor fungsi dari antigroupchannel.js
+const { antivideo } = require('./LIST_FITUR/Antivideo'); // Impor fungsi antivideo
+const { antispam } = require('./LIST_FITUR/antispam'); // Impor fungsi antispam
+const { sendNotification } = require('./LIST_FITUR/notifpesantersambung'); // Impor fungsi sendNotification dari notifpesantersambung.js
 
 let { viewCount, restartCount } = loadCounts();
 
@@ -349,7 +349,7 @@ async function main() {
           }, 60000); // Perbarui bio setiap 60 detik
         }
 
-        await sendNotification(client, viewCount, restartCount);
+        await sendNotification(client, viewCount, restartCount); // Panggil fungsi sendNotification
         autoOnline(client);
       }
     });
